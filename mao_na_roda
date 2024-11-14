@@ -1,0 +1,235 @@
+Algoritmo "mão na roda"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi
+
+Var
+   opcaoMenu, opcaoVendas, opcaoAlugueis,opcaoCar : inteiro
+   corro1, carro2: logico
+   nome, tipoCNH : caractere
+   idade, cpf: inteiro
+   a: logico
+inicio
+   //tela de bem vinda
+procedimento telaInicial()
+inicio
+   escreval("==========================")
+   escreval("        Bem-Vindo     ")
+   escreval("==========================")
+   escreval("Pressione Enter para continuar")
+   leia(a)
+fimprocedimento
+
+//procedimento do menu principal
+procedimento menuIniciar()
+inicio
+   escreval("=========================")
+   escreval("    Menu Principal  ")
+   escreval("=========================")
+   escreval("1. Vendas ")
+   escreval("2. Alugueis ")
+   escreval("3. Fale Conosco")
+   escreval("4. Duvidas Frequentes")
+   escreval("5. Sobre")
+   escreval("6. Sair")
+   leia(opcaoMenu)
+   escreval()
+fimprocedimento
+//tela de cadastro
+procedimento cadastro()
+inicio
+ escreval("=======================")
+ escreval("Cadastro")
+ escreval("=======================")
+ escreval("digite seu nome: ")
+ leia(nome)
+ escreval("digite seu CPF: ")
+ leia(cpf)
+ escreval("tipo de carteira ")
+ escreval("CNH A")
+ escreval("CNH B")
+fimprocedimento
+
+//tela de vendas
+procedimento venda()
+inicio
+   escreval("==========================")
+   escreval("Escolha o tipo de veículo:")
+   escreval("==========================")
+   escreval("1. Popular")
+   escreval("2. Esportivo")
+   escreval("3. Luxo")
+   leia(opcaoVendas)
+
+   escolha opcaoCar
+   caso 1
+      escreval("Escolha um modelo Popular:")
+      escreval("1. Renault Kwid Zen 1.0 ")
+      escreval("2. Fiat Mobi Like 1.0 ")
+      escreval("3. Citroën C3 Live 1.0 ")
+      leia(opcaoCar)
+      escreval()
+
+      escolha opcaoCar
+      caso 1
+         escreval("Renault Kwid Zen 1.0 – R$ 71.190")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      caso 2
+         escreval("Você escolheu: Fiat Mobi Like 1.0 – R$ 71.990")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      caso 3
+         escreval("Você escolheu: Citroën C3 Live 1.0 – R$ 72.990")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      outrocaso
+         escreval("Opção de modelo inválida.")
+      fimescolha
+
+   caso 2
+      escreval("Escolha um modelo Esportivo:")
+      escreval("1. Chevrolet Corvette C8 – R$ 1.147.000")
+      escreval("2. Porsche 911 – R$ 868.000")
+      escreval("3. Audi R8 V10 Performance – R$ 942.820")
+      leia(carro1)
+
+      escolha carro1
+      caso 1
+         escreval("Você escolheu: Chevrolet Corvette C8 – R$ 1.147.000")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      caso 2
+         escreval("Você escolheu: Porsche 911 – R$ 868.000")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      caso 3
+         escreval("Você escolheu: Audi R8 V10 Performance – R$ 942.820")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      outrocaso
+         escreval("Opção de modelo inválida.")
+      fimescolha
+
+   caso 3
+      escreval("Escolha um modelo de Luxo:")
+      escreval("1. BMW X1 – R$ 280.000")
+      escreval("2. Volvo XC90 – R$ 550.000")
+      escreval("3. Porsche Macan – R$ 480.000")
+      leia(carro1)
+
+      escolha carro1
+      caso 1
+         escreval("Você escolheu: BMW X1 – R$ 280.000")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      caso 2
+         escreval("Você escolheu: Volvo XC90 – R$ 550.000")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      caso 3
+         escreval("Você escolheu: Porsche Macan – R$ 480.000")
+         escreval(nome," ,",cpf," seu agendamento foi feito ")
+         escreval("Compareça em uma de nossas lojas mais proximas")
+      outrocaso
+         escreval("Opção de modelo inválida.")
+      fimescolha
+
+   outrocaso
+      escreval("Opção de categoria inválida.")
+   fimescolha
+fimprocedimento
+
+//opção de vendas
+procedimento alugueis()
+inicio
+   escreval("==========================")
+   escreval("Escolha a classe do veículo:")
+   escreval("==========================")
+   escreval("1. Popular")
+   escreval("2. Esportivo")
+   escreval("3. Luxo")
+   leia(opcaoAlugueis)
+
+   escolha opcaoAlugueis
+   caso 1
+      escreval("1 Chevrolet Onix")
+      escreval("2 Fiat Mobi")
+      escreval("3 Volkswagen Gol")
+      escreval("4 Renault Kwid")
+      escreval("6 Ford Ka")
+
+   caso 2
+      escreval("Honda Civic")
+      escreval("Toyota Corolla")
+      escreval("Volkswagen Jetta")
+      escreval("Chevrolet Cruze")
+      escreval("Nissan Altima")
+   caso 3
+      escreval("Jaguar XE")
+      escreval("Mercedes Benz Classe C")
+      escreval("Volvo S60")
+      escreval("BMW Série 3")
+      escreval("Audi A4")
+   outrocaso
+      escreval("Opção inválida.")
+   fimescolha
+fimprocedimento
+
+//tela de fale conosco
+procedimento faleConosco()
+inicio
+   escreval("Para dúvidas, entre em contato: elitecarrosuporte@gmail.com")
+fimprocedimento
+
+//tela de duvidas frequantes
+procedimento duvidasFrequentes()
+inicio
+   escreval("1. Como funciona o seguro do carro?")
+   escreval("2. O que está incluso no preço do aluguel?")
+   escreval("3. Quais documentos são necessários?")
+   leia(opcaoMenu)
+
+   escolha opcaoMenu
+   caso 1
+      escreval("Seguro Básico - Não cobre danos no interior do veículo, pneus ou causados por negligência.")
+   caso 2
+      escreval("Está incluso: combustível, impostos e taxas, e seguro básico.")
+   caso 3
+      escreval("Documentos necessários: CNH, Carteira de identidade, CPF e comprovante de endereço.")
+   outrocaso
+      escreval("Opção inválida.")
+   fimescolha
+fimprocedimento
+
+//tela com informações sobre a empresa
+procedimento sobre()
+inicio
+   escreval("Este é um sistema de vendas e aluguel de carros, desenvolvido para facilitar sua experiência.")
+   escreval("Nosso objetivo é oferecer veículos de qualidade, com diversos modelos e opções para você.")
+fimprocedimento
+
+//codigo de exibição
+telaInicial()
+cadastro()
+
+repita
+   menuIniciar()
+   escreval()
+   escolha opcaoMenu
+   caso 1
+      venda()
+   caso 2
+      alugueis()
+   caso 3
+      faleConosco()
+   caso 4
+      duvidasFrequentes()
+   caso 5
+      sobre()
+   caso 6
+      escreval("Saindo... Até logo!")
+   outrocaso
+      escreval("Opção inválida. Tente novamente.")
+   fimescolha
+ate opcaoMenu = 6
+fimalgoritmo
